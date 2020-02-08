@@ -33,13 +33,7 @@ dependencies {
     implementation 'com.squareup.picasso:picasso:2.71828'
     //pretty time library, for social media type date time formatting
     implementation 'org.ocpsoft.prettytime:prettytime:4.0.1.Final'
-    //exoplayer library for video streaming
-    implementation 'com.google.android.exoplayer:exoplayer:2.11.1'
-    implementation 'com.google.android.exoplayer:exoplayer-core:2.11.1'
-    implementation 'com.google.android.exoplayer:exoplayer-dash:2.11.1'
-    implementation 'com.google.android.exoplayer:exoplayer-ui:2.11.1'
-    implementation 'com.google.android.exoplayer:exoplayer-smoothstreaming:2.11.1'
-    implementation 'com.google.android.exoplayer:exoplayer-hls:2.11.1'
+   
 
 
 
