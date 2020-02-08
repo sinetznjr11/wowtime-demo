@@ -16,13 +16,36 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
+
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.0.2'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    //volley library, for sending HTTP request
+    implementation 'com.android.volley:volley:1.1.1'
+    //picasso library, for loading image from url
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    //pretty time library, for social media type date time formatting
+    implementation 'org.ocpsoft.prettytime:prettytime:4.0.1.Final'
+    //exoplayer library for video streaming
+    implementation 'com.google.android.exoplayer:exoplayer:2.11.1'
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.11.1'
+    implementation 'com.google.android.exoplayer:exoplayer-dash:2.11.1'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.11.1'
+    implementation 'com.google.android.exoplayer:exoplayer-smoothstreaming:2.11.1'
+    implementation 'com.google.android.exoplayer:exoplayer-hls:2.11.1'
+
+
+
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    implementation files('libs\\YouTubeAndroidPlayerApi.jar')
+
 }
